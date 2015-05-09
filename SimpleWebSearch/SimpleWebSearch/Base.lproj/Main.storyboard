@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SimpleWebSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="请输入搜索网站或直接输入网址" translatesAutoresizingMaskIntoConstraints="NO" id="HHA-Rr-xf2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KKL-Ek-4RD"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="blL-nx-9lc"/>
+                                </connections>
+                            </searchBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tua-Ou-DXx">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HHA-Rr-xf2" secondAttribute="trailing" id="5Ca-NV-jIa"/>
+                            <constraint firstItem="HHA-Rr-xf2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="7pf-eB-YDy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tua-Ou-DXx" secondAttribute="bottom" id="FnR-yS-UVj"/>
+                            <constraint firstItem="HHA-Rr-xf2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SQ9-Fa-lhr"/>
+                            <constraint firstAttribute="trailing" secondItem="tua-Ou-DXx" secondAttribute="trailing" id="YNE-wf-Am9"/>
+                            <constraint firstItem="tua-Ou-DXx" firstAttribute="top" secondItem="HHA-Rr-xf2" secondAttribute="bottom" id="hgS-eq-XFk"/>
+                            <constraint firstItem="tua-Ou-DXx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mbu-gi-QYT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="search" destination="HHA-Rr-xf2" id="qv7-x9-IyZ"/>
+                        <outlet property="webView" destination="tua-Ou-DXx" id="YNa-NP-GDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
