@@ -46,6 +46,9 @@
 		04A3E1811AFA276900C9D679 /* DifferentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3E1801AFA276900C9D679 /* DifferentRequest.m */; };
 		765894671AFB40230025D177 /* 上传文件格式笔记.m in Sources */ = {isa = PBXBuildFile; fileRef = 765894661AFB40230025D177 /* 上传文件格式笔记.m */; };
 		7658946C1AFB4B560025D177 /* PostMultipleFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658946B1AFB4B560025D177 /* PostMultipleFile.m */; };
+		76C9FF1D1AFF6EB800D5DA4B /* CryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9FF1C1AFF6EB800D5DA4B /* CryptorTools.m */; };
+		76C9FF211AFF6F3500D5DA4B /* RSA\AES_Seceret.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9FF201AFF6F3500D5DA4B /* RSA\AES_Seceret.m */; };
+		76C9FF281AFF708F00D5DA4B /* SynchronousDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9FF271AFF708F00D5DA4B /* SynchronousDownLoad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,12 @@
 		765894661AFB40230025D177 /* 上传文件格式笔记.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "上传文件格式笔记.m"; sourceTree = "<group>"; };
 		7658946A1AFB4B560025D177 /* PostMultipleFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostMultipleFile.h; sourceTree = "<group>"; };
 		7658946B1AFB4B560025D177 /* PostMultipleFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostMultipleFile.m; sourceTree = "<group>"; };
+		76C9FF1B1AFF6EB800D5DA4B /* CryptorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptorTools.h; sourceTree = "<group>"; };
+		76C9FF1C1AFF6EB800D5DA4B /* CryptorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptorTools.m; sourceTree = "<group>"; };
+		76C9FF1F1AFF6F3500D5DA4B /* RSA\AES_Seceret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSA\\AES_Seceret.h"; sourceTree = "<group>"; };
+		76C9FF201AFF6F3500D5DA4B /* RSA\AES_Seceret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RSA\\AES_Seceret.m"; sourceTree = "<group>"; };
+		76C9FF261AFF708F00D5DA4B /* SynchronousDownLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronousDownLoad.h; sourceTree = "<group>"; };
+		76C9FF271AFF708F00D5DA4B /* SynchronousDownLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronousDownLoad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,16 +164,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04A387071AFA633100CCF7F8 /* Security */ = {
+		04A387071AFA633100CCF7F8 /* Security(常用加密解密) */ = {
 			isa = PBXGroup;
 			children = (
 				04A387081AFA633100CCF7F8 /* NSString+Hash.h */,
 				04A387091AFA633100CCF7F8 /* NSString+Hash.m */,
 			);
+			name = "Security(常用加密解密)";
 			path = Security;
 			sourceTree = "<group>";
 		};
-		04A3870B1AFA647900CCF7F8 /* SSKeychain */ = {
+		04A3870B1AFA647900CCF7F8 /* SSKeychain(钥匙串访问) */ = {
 			isa = PBXGroup;
 			children = (
 				04A3870C1AFA647900CCF7F8 /* SSKeychain.strings */,
@@ -173,6 +183,7 @@
 				04A387101AFA647900CCF7F8 /* SSKeychainQuery.h */,
 				04A387111AFA647900CCF7F8 /* SSKeychainQuery.m */,
 			);
+			name = "SSKeychain(钥匙串访问)";
 			path = SSKeychain;
 			sourceTree = "<group>";
 		};
@@ -254,6 +265,8 @@
 		04A3E11D1AFA1A0B00C9D679 /* 网络知识点回顾 */ = {
 			isa = PBXGroup;
 			children = (
+				76C9FF221AFF6FD000D5DA4B /* 同步下载 */,
+				76C9FF1E1AFF6F0F00D5DA4B /* RSA\AES加密解密 */,
 				765894691AFB4B2C0025D177 /* POST上传多文件 */,
 				04A3880E1AFA68CC00CCF7F8 /* 完整用户登录框架（见工作空间中的用户登录项目。） */,
 				04A3E17E1AFA274D00C9D679 /* 不同请求方式（以及加密处理） */,
@@ -389,8 +402,9 @@
 		04A3E17B1AFA25CF00C9D679 /* 整理的常用工具 */ = {
 			isa = PBXGroup;
 			children = (
-				04A3870B1AFA647900CCF7F8 /* SSKeychain */,
-				04A387071AFA633100CCF7F8 /* Security */,
+				76C9FF1A1AFF6EB800D5DA4B /* Cryptor ( AES / RSA ) */,
+				04A3870B1AFA647900CCF7F8 /* SSKeychain(钥匙串访问) */,
+				04A387071AFA633100CCF7F8 /* Security(常用加密解密) */,
 				04A3E13B1AFA247900C9D679 /* Log（数组、字典输出中文） */,
 			);
 			name = "整理的常用工具";
@@ -412,6 +426,34 @@
 				7658946B1AFB4B560025D177 /* PostMultipleFile.m */,
 			);
 			name = "POST上传多文件";
+			sourceTree = "<group>";
+		};
+		76C9FF1A1AFF6EB800D5DA4B /* Cryptor ( AES / RSA ) */ = {
+			isa = PBXGroup;
+			children = (
+				76C9FF1B1AFF6EB800D5DA4B /* CryptorTools.h */,
+				76C9FF1C1AFF6EB800D5DA4B /* CryptorTools.m */,
+			);
+			name = "Cryptor ( AES / RSA )";
+			path = Cryptor;
+			sourceTree = "<group>";
+		};
+		76C9FF1E1AFF6F0F00D5DA4B /* RSA\AES加密解密 */ = {
+			isa = PBXGroup;
+			children = (
+				76C9FF1F1AFF6F3500D5DA4B /* RSA\AES_Seceret.h */,
+				76C9FF201AFF6F3500D5DA4B /* RSA\AES_Seceret.m */,
+			);
+			name = "RSA\\AES加密解密";
+			sourceTree = "<group>";
+		};
+		76C9FF221AFF6FD000D5DA4B /* 同步下载 */ = {
+			isa = PBXGroup;
+			children = (
+				76C9FF261AFF708F00D5DA4B /* SynchronousDownLoad.h */,
+				76C9FF271AFF708F00D5DA4B /* SynchronousDownLoad.m */,
+			);
+			name = "同步下载";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +558,7 @@
 			files = (
 				04A3E17D1AFA266300C9D679 /* HTTP状态码.m in Sources */,
 				04A387141AFA647900CCF7F8 /* SSKeychainQuery.m in Sources */,
+				76C9FF211AFF6F3500D5DA4B /* RSA\AES_Seceret.m in Sources */,
 				04A3E1731AFA247900C9D679 /* UIImage+GIF.m in Sources */,
 				04A3E17A1AFA247900C9D679 /* XMLController.m in Sources */,
 				04A3E1791AFA247900C9D679 /* VideoCell.m in Sources */,
@@ -539,10 +582,12 @@
 				04A3E1291AFA1B0700C9D679 /* SocketChat.m in Sources */,
 				04A3E1781AFA247900C9D679 /* UIView+WebCacheOperation.m in Sources */,
 				04A3870A1AFA633100CCF7F8 /* NSString+Hash.m in Sources */,
+				76C9FF1D1AFF6EB800D5DA4B /* CryptorTools.m in Sources */,
 				04A3E0F71AFA18F100C9D679 /* main.m in Sources */,
 				04A3E1681AFA247900C9D679 /* Video.m in Sources */,
 				04A3E16E1AFA247900C9D679 /* SDWebImageDownloader.m in Sources */,
 				04A387131AFA647900CCF7F8 /* SSKeychain.m in Sources */,
+				76C9FF281AFF708F00D5DA4B /* SynchronousDownLoad.m in Sources */,
 				04A3E1761AFA247900C9D679 /* UIImageView+HighlightedWebCache.m in Sources */,
 				04A3E16D1AFA247900C9D679 /* SDWebImageDecoder.m in Sources */,
 				04A3E1751AFA247900C9D679 /* UIImage+WebP.m in Sources */,

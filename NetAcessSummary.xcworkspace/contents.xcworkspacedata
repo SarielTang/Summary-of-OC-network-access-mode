@@ -10,4 +10,7 @@
    <FileRef
       location = "group:03-POST JSON/03-POST JSON.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:03 -&#x4e0b;&#x8f7d;&#x6587;&#x4ef6;/02-&#x4e0b;&#x8f7d;&#x6587;&#x4ef6;.xcodeproj">
+   </FileRef>
 </Workspace>
