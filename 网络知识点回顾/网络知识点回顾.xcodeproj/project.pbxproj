@@ -44,6 +44,7 @@
 		04A3E17A1AFA247900C9D679 /* XMLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3E1661AFA247900C9D679 /* XMLController.m */; };
 		04A3E17D1AFA266300C9D679 /* HTTP状态码.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3E17C1AFA266300C9D679 /* HTTP状态码.m */; };
 		04A3E1811AFA276900C9D679 /* DifferentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3E1801AFA276900C9D679 /* DifferentRequest.m */; };
+		04B99EC51B0102BD00D94AB3 /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B99EC41B0102BD00D94AB3 /* NSString+STRegex.m */; };
 		765894671AFB40230025D177 /* 上传文件格式笔记.m in Sources */ = {isa = PBXBuildFile; fileRef = 765894661AFB40230025D177 /* 上传文件格式笔记.m */; };
 		7658946C1AFB4B560025D177 /* PostMultipleFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7658946B1AFB4B560025D177 /* PostMultipleFile.m */; };
 		76C9FF1D1AFF6EB800D5DA4B /* CryptorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9FF1C1AFF6EB800D5DA4B /* CryptorTools.m */; };
@@ -135,6 +136,8 @@
 		04A3E17C1AFA266300C9D679 /* HTTP状态码.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTP状态码.m"; sourceTree = "<group>"; };
 		04A3E17F1AFA276900C9D679 /* DifferentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifferentRequest.h; sourceTree = "<group>"; };
 		04A3E1801AFA276900C9D679 /* DifferentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifferentRequest.m; sourceTree = "<group>"; };
+		04B99EC31B0102BD00D94AB3 /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
+		04B99EC41B0102BD00D94AB3 /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 		765894661AFB40230025D177 /* 上传文件格式笔记.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "上传文件格式笔记.m"; sourceTree = "<group>"; };
 		7658946A1AFB4B560025D177 /* PostMultipleFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostMultipleFile.h; sourceTree = "<group>"; };
 		7658946B1AFB4B560025D177 /* PostMultipleFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostMultipleFile.m; sourceTree = "<group>"; };
@@ -402,6 +405,7 @@
 		04A3E17B1AFA25CF00C9D679 /* 整理的常用工具 */ = {
 			isa = PBXGroup;
 			children = (
+				04B99EC21B01027C00D94AB3 /* Regex (各类验证方法，包含身份验证等) */,
 				76C9FF1A1AFF6EB800D5DA4B /* Cryptor ( AES / RSA ) */,
 				04A3870B1AFA647900CCF7F8 /* SSKeychain(钥匙串访问) */,
 				04A387071AFA633100CCF7F8 /* Security(常用加密解密) */,
@@ -417,6 +421,15 @@
 				04A3E1801AFA276900C9D679 /* DifferentRequest.m */,
 			);
 			name = "不同请求方式（以及加密处理）";
+			sourceTree = "<group>";
+		};
+		04B99EC21B01027C00D94AB3 /* Regex (各类验证方法，包含身份验证等) */ = {
+			isa = PBXGroup;
+			children = (
+				04B99EC31B0102BD00D94AB3 /* NSString+STRegex.h */,
+				04B99EC41B0102BD00D94AB3 /* NSString+STRegex.m */,
+			);
+			name = "Regex (各类验证方法，包含身份验证等)";
 			sourceTree = "<group>";
 		};
 		765894691AFB4B2C0025D177 /* POST上传多文件 */ = {
@@ -592,6 +605,7 @@
 				04A3E16D1AFA247900C9D679 /* SDWebImageDecoder.m in Sources */,
 				04A3E1751AFA247900C9D679 /* UIImage+WebP.m in Sources */,
 				04A3E1701AFA247900C9D679 /* SDWebImageManager.m in Sources */,
+				04B99EC51B0102BD00D94AB3 /* NSString+STRegex.m in Sources */,
 				04A3E1301AFA211100C9D679 /* JSONAnalyze.m in Sources */,
 				04A3E16B1AFA247900C9D679 /* SDImageCache.m in Sources */,
 			);
